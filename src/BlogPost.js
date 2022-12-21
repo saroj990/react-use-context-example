@@ -19,8 +19,6 @@ const BlogPost = () => {
   const handlePost = () => {
     const postTitle = titleRef.current.value;
     const postBody = bodyRef.current.value;
-    console.log("title : ", postTitle);
-    console.log("postBody : ", postBody);
     setBlogs((blogs) => [...blogs, { title: postTitle, body: postBody }]);
   };
 
